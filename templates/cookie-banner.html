@@ -1,0 +1,84 @@
+<div id="cookie-banner-overlay">
+    <div class="cookie-banner-container">
+        <div class="cookie-banner-text">
+            <h2>Cookie Settings</h2>
+
+            <form id="cookie-consent-form" onsubmit="onCookieFormSubmit()">
+
+                <div class="form-item">
+                    <h3>Ad Storage</h3>                           
+                    <p>Enables storage (such as cookies) related 
+                        to advertising.
+                    </p>
+                <label for="ad_storage" class="switch">
+                    <input type="checkbox"
+                        id="ad_storage"
+                        name="ad_storage"
+                        value="granted">
+                <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="form-item">
+                <h3>Analytics Storage</h3>                          
+                <p>Enables storage (such as cookies) related to 
+                    analytics e.g. visit duration.
+                </p>
+            <label for="analytics_storage" class="switch">
+                <input type="checkbox"
+                    id="analytics_storage"
+                    name="analytics_storage"
+                    value="granted">
+            <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="form-item">
+            <h3>Ad User Data</h3>                       
+            <p>Sets consent for sending user 
+                data to Google for advertising purposes.
+            </p>
+        <label for="ad_user_data" class="switch">
+            <input type="checkbox"
+                id="ad_user_data"
+                name="ad_user_data"
+                value="granted">
+        <span class="slider"></span>
+        </label>
+    </div>
+
+            
+            <div class="form-item">
+                    <h3>Ad Personalization</h3>                         
+                    <p>Sets consent for 
+                        personalized advertising.
+                    </p>
+                <label for="ad_personalization" class="switch">
+                    <input type="checkbox"
+                        id="ad_personalization"
+                        name="ad_personalization"
+                        value="granted">
+                <span class="slider"></span>
+                </label>
+            </div>
+
+                <div class="cookie-btns">
+                    <a class="default btn"
+                       href="javascript:;"
+                       onclick="onCookieAcceptAll()">Accept All</a>
+                    <a class="default btn"
+                       href="javascript:;"
+                       onclick="onCookieDenyAll()">Deny All</a>
+                    <a class="btn"
+                       href="javascript:;"
+                       onclick="onCookieFormSubmit()">Save Custom</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="cookie-banner-icon" onclick="toggleCookieBanner();">
+    <img src="{{ url_for('static', filename='images/cookie.png') }}"/>
+</div>
+
+<script src="{{ url_for('static', filename='js/cookie-banner.js') }}"></script>

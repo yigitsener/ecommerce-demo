@@ -1,0 +1,5 @@
+env_variables:
+  GTM_WEB_CONTAINER_ID: 'GTM-NJJRHQ65'
+  SECRET_KEY: 'ecomgtmversionv3'
+  CURRENCY_CODE: USD
+  CURRENCY_SYMBOL: $

@@ -1,0 +1,376 @@
+
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background: #fff;
+  color: #121211;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto', sans-serif
+}
+
+a {
+  color: #BB86FC;
+}
+
+a:hover {
+  color: #03DAC5;
+}
+
+.btn {
+  background: #BB86FC;
+  color: #fff;
+  padding: 5px 15px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.btn.buy-one-click{
+  background: #FC868C;
+}
+
+.btn:hover {
+  background: #03DAC5;
+}
+
+.btn.clicked {
+  background: #666666;
+}
+
+.topbar {
+  background: #fff;
+  text-align:left;
+}
+
+.topbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.topbar .company-logo,
+.topbar .company-name {
+  float: left;
+  vertical-align: middle;
+}
+
+
+.topbar .company-logo img {
+  height: 60px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.topbar .company-name h2 {
+  display: flex;
+  font-size: 30px;
+  margin-top: 24px;
+}
+
+.topbar .account {
+  float: right;
+  margin: 10px;
+}
+
+.topbar .account .hello-container {
+  float: left;
+  padding: 8px 15px 0;
+  text-align: right;
+}
+
+.topbar .account .hello-container span {
+  display: block;
+}
+
+.topbar .account .hello-container .hello a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.topbar .account .hello-container span.user-id {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.topbar .account a.btn {
+  float: left;
+  display: block;
+  background: #38284c;
+  margin-top: 12px;
+}
+
+.page-container {
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #966bca;
+}
+
+nav ul li {
+  float:left
+}
+
+nav ul li.basket {
+  float:right;
+}
+
+nav ul li.basket a {
+  padding: 6px 20px;
+}
+
+nav ul li.basket img {
+  height: 40px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  background: #BB86FC;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #03DAC5;
+  color: #fff;
+}
+
+.container-highlight {
+  background: #fff;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.product-image {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.basket-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#clear-basket.btn {
+  float:left;
+}
+
+#buy.btn {
+  float: right;
+}
+
+ul.ordered-products {
+  list-style-type: none;
+}
+
+ul.ordered-products li.total {
+  margin: 10px;
+  font-weight: bold;
+}
+
+form.login {
+  max-width: 500px;
+  margin: auto;
+}
+
+.login .form-group {
+  display:block;
+  margin-bottom: 10px
+}
+
+.login .form-group label {
+  display: block;
+}
+
+.login .form-group input {
+  width: 100%;
+  text-align:center;
+}
+
+#cookie-banner-overlay {
+  position: absolute;
+  top:0;
+  bottom:0;
+  right: 0;
+  left: 0;
+  animation: fadeIn 0.1s;
+  animation-fill-mode: forwards;
+  display:none;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from { background: rgba(70, 13, 13, 0); }
+  to { background: rgba(241, 238, 238, 0.8); }
+}
+
+#cookie-banner-icon {
+  position: fixed;
+  bottom: 15px;
+  right: 5px;
+}
+
+#cookie-banner-icon:hover {
+  background: #03DAC5;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#cookie-banner-icon img {
+  height: 60px;
+}
+
+.cookie-banner-container {
+  background: #fff;
+  width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.cookie-banner-text h2 {
+  color: darkgoldenrod;  /* Example color - change to your desired color */
+  padding-bottom: 30px;
+}
+
+.form-item {
+  display: grid;
+  grid-template-columns: 70% 30%;   /* Two equal-width columns */
+  grid-template-rows: auto;
+}
+
+
+.form-item h3 {
+  grid-row: 1; 
+  font-weight: bold; 
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 0px≈≈ç;
+}
+
+.form-item p { /* Style the description */
+  grid-column: 1;
+  grid-row: 2; 
+  font-size: 10px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.form-item .switch { /* Update if switch needs adjustment */
+ /* grid-column: 2;
+ /* grid-row: 1;  /* Make it occupy the same row as left-top */
+ /* grid-row-end: span 1; /* Make it span only one row*/
+  display: flex;         
+  justify-content: center; 
+}
+
+/* Styling for the button */
+.form-item button {
+  margin-left: auto;   /* Push button to the right */
+  padding: 8px 15px;
+  background-color: #4CAF50; /* Example color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+
+
+
+
+.user-card-container {
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.user-card {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.user-card:hover {
+  background-color: #a1d5cf;
+}
+
+
+@media (max-width: 480px) {
+  .topbar {
+    width: 90%;
+    height: 20%;
+  }
+}
+
+footer {
+  text-align: center;
+  color: gray;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
